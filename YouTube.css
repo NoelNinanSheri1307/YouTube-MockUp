@@ -1,0 +1,220 @@
+*
+        {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p, h1, h2,input,a
+        {
+            text-align: center;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+            height: 3000px;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        .topbar
+        {
+            width: 100%;
+            height: 35px;
+            background-color: rgb(29, 29, 29);
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        #Logo
+        {
+            float: left;
+        }
+        #LeftArrow
+        {
+            margin-top: 10px;
+            color: white;
+        }
+        .reload
+        { 
+            color: white; 
+            cursor: pointer; 
+        }
+        .reload-container
+        {
+            margin-top: 10px; 
+            margin-left: 20px;
+        }
+        .rightoftopbar {
+            color: white;
+            margin-left: auto;
+            margin-right: 0;
+            margin-top: 0;
+            height: 100%;
+            display: flex; 
+            align-items: center; 
+        }
+        .close-button {
+            background-color: rgb(29, 29, 29);
+            border: none;
+            font-size: 24px;
+            color: rgb(250, 249, 249);
+            cursor: pointer;
+            height: 100%;
+            width: 50px;
+        }
+        .close-button:hover 
+        {
+            background-color: red;
+            color: rgb(6, 6, 6);
+        }
+        .icon {
+            color: white;
+            margin-top: 9px;
+        }
+        #sample, #restorediv, .close-button {
+            width: 50px;
+            height: 100%;
+            background-color: rgb(29, 29, 29);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0;
+        }
+        #sample, #restorediv
+        {
+            margin-bottom: 5px;
+        }
+        #sample:hover, #restorediv:hover {
+            background-color: rgb(78, 76, 76);
+        }
+        .maincontainer
+        {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            background-color: black;
+            color: white;
+            padding-top: 35px; 
+        }
+        .sidemenu {
+            height:100%;
+            width: 250px;
+            position: fixed;
+            left: -250px;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            z-index: 1500;
+        }
+        .sidemenu.open {
+            left: 0;
+        }
+        .sidemenu a {
+            text-decoration: none;
+            color:white;
+        }
+        .sidediv
+        {
+            color: white;
+            display: block;
+            padding: 15px;
+            transition: 0.3s;
+            border-radius:15px;
+            background-color: black;
+            z-index: 1500;
+            display: flex;
+            align-items: center;
+            transition:ease-in-out 0.3s;
+        }
+        .sidediv:hover {
+            filter:invert();
+            border:2px solid silver;
+            transform:translateX(30px);
+        }
+        .open-button {
+            top: 35px;
+            left: 15px;
+            font-size: 23px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            position: fixed;
+            border:0;
+            margin-top:6px;
+        }
+        .open-button:hover {
+            background-color: rgb(78, 76, 76);
+        }
+        #name
+        {
+            margin-left:60px;
+            position:fixed;
+            margin-top:5px;
+        }
+        .sidebox
+        {
+            display:flex;
+            height:50px;
+            width:100%;
+            position:fixed;
+        }
+        .search
+        {
+            margin-left:450px;
+            height:35px;
+            width:500px;
+            margin-top:8px;
+            border:2px solid rgb(78, 76, 76);
+            border-radius:25px;
+            display:flex;
+            background-color: rgb(78, 76, 76);
+        }
+        .search input{
+            background-color:black;
+            height:100%;
+            width:500px;
+            color:white;
+            border-radius:25px 0 0 25px;
+            margin:0;
+            border:0;
+        }
+        .menu{
+            height:100%;
+            position:fixed;
+            width:90px;
+            margin-top:50px;
+            justify-content:center;
+        }
+        .sidesmallbox:hover
+        {
+            background-color: rgb(78, 76, 76);
+            border-radius:25px;
+        }
+        .menu-hidden .sidesmallbox {
+            display: none;
+        }
+        .video {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height:1000px;
+            width: 100%;
+            margin-left: 90px;
+            margin-top: 65px;
+        }
+        #videos {
+            height: 300px;
+            width: 33%;
+            border-radius: 25px;
+            text-align: center;
+            margin: 0; 
+            padding: 0;
+            background-color: black;
+        }
+        #videos:hover {
+            background-color: rgb(78, 76, 76);
+            border: 2px solid silver;
+        }

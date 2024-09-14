@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="YouTube.css">
+</head>
+<body>
+    <div class="topbar">
+        <a href="YouTube.html"> <img id="Logo" src="Logo.png" height="40px" width="50px" alt="YoutubeLogo"></a>
+        <a href="YouTube.html"><p id="LeftArrow">&larr;</p></a>
+        <div class="reload-container">
+            <i class="fas fa-sync-alt reload" onclick="location.reload();"></i>
+        </div>
+        <div style="height: 100%; width: 100px; justify-content: center; color: white; align-items: center; display: flex;">
+            <p>YouTube</p>
+        </div>
+        <div class="rightoftopbar">
+            <div id="sample"><div class="minimize-button"><button></button></div></div>
+            <div id="restorediv"><center><i class="fas fa-window-restore icon" title="Restore"></i></center></div>
+            <button class="close-button" onclick="this.parentElement.style.display='none';">&times;</button>
+        </div>
+    </div>
+    <div class="maincontainer">
+    <div class="sidebox">
+        <button class="open-button" id="openButton">☰</button>
+        <div id="sideMenu" class="sidemenu">
+            <div class="sidediv"><a href="javascript:void(0)" onclick="toggleMenu()">Close</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Home.png" alt="Home" height="30px" width="35px">Home</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Shorts.png" alt="Shorts" height="30px" width="35px">Shorts</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Subscriptions.png" alt="Subscriptions" height="30px" width="35px">Subscriptions</a></div>
+            <hr width="100%" height="3px">
+            <p><b>You   ></b></p>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="YourChannel.png" alt="YourChannel" height="30px" width="35px">Your Channel</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="History.png" alt="History" height="30px" width="35px">History</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="PLaylists.png" alt="Playlists" height="30px" width="35px">Playlists</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="YourVideos.png" alt="Your Videos" height="30px" width="35px">Your Videos</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="WatchLater.png" alt="WatchLater" height="30px" width="35px">Watch Later</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Liked Videos.png" alt="Liked Videos" height="30px" width="35px">Liked Videos</a></div>
+            <hr width="100%" height="3px">
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Trending.png" alt="Trending" height="30px" width="35px">Trending</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Shopping.png" alt="Shopping" height="30px" width="35px">Shopping</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Music.png" alt="Music" height="30px" width="35px">Music</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Movies.png" alt="Movies" height="30px" width="35px">Movies</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Live.png" alt="Live" height="30px" width="35px">Live</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Gaming.png" alt="Gaming" height="30px" width="35px">Gaming</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="News.png" alt="News" height="30px" width="35px">News</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Sports.png" alt="Sports" height="30px" width="35px">Sports</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Courses.png" alt="Courses" height="30px" width="35px">Courses</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="FashionandBeauty.png" alt="FashionandBeauty" height="30px" width="35px">Fashion and Beauty</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Podcasts.png" alt="Podcasts" height="30px" width="35px">Podcasts</a></div>
+            <hr width="100%" height="3px">
+            <p><b>More From YouTube</b></p>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Premium.png" alt="Premium" height="30px" width="35px">Youtube Premium</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="YouTubeMusic.png" alt="Music" height="30px" width="35px">YouTube Music</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="YouTubeKids.png" alt="YouTube Kids" height="30px" width="35px">YouTube Kids</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="YouTubeStudio.png" alt="Studio" height="30px" width="35px">YouTube Studio</a></div>
+            <hr width="100%" height="3px">
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Settings.png" alt="Settings" height="30px" width="35px">Settings</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="ReportHistory.png" alt="Report" height="30px" width="35px">Report History</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="SendFeedback.png" alt="SendFeedback" height="30px" width="35px">Send Feedback</a></div>
+            <div class="sidediv"><a href="https://vit.ac.in" target="_blank" ><img style="margin-right:10px;vertical-align:middle;"src="Help.png" alt="Help" height="30px" width="35px">Help</a></div>
+            <p>&nbsp</p>
+        </div>
+        <img id="name" src="YouTubeLogo.png" alt="YouTubeLogo" height="40px" width="130px">
+        <div class="search">
+            <input type="search" placeholder="Search Here">
+            <img src="Search.png" alt="Search" style="cursor:pointer;border-radius:25px;">
+        </div>
+        <img src="Mic.png" alt="Mic" style="cursor:pointer;margin-left:10px;margin-top:8px;border-radius:50%;border:2px solid white;" height="35px" width="35px">
+        <img src="VideoCamera.png" alt="Video" style="cursor:pointer;margin-left:auto;margin-right:20px;margin-top:5px;border-radius:50%;filter:invert();" height="35px" width="35px">
+        <img src="Bell.png" alt="Bell" style="cursor:pointer;margin-right:20px;margin-top:5px;border-radius:50%;filter:invert();" height="35px" width="35px">
+        <img src="Omen.png" alt="user" style="cursor:pointer;margin-right:10px;margin-top:5px;border-radius:50%;" height="30px" width="35px">
+    </div> 
+    <div class="menu"><center>
+        <div class="sidesmallbox"><img src="Home.png" alt="Home" style="margin-top:10px;" height="20px">
+            <p style="margin-top:1px;">Home</p></div>
+        <div class="sidesmallbox"><img src="Shorts.png" alt="Shorts" style="margin-top:10px;" height="20px">
+            <p style="margin-top:1px;">Shorts</p></div>
+        <div class="sidesmallbox"><img src="Subscriptions.png" alt="Subscriptions" style="margin-top:10px;" height="20px">
+            <p style="margin-top:1px;">Subscriptions</p></div>
+        <div class="sidesmallbox"><img src="You.png" alt="You" style="margin-top:10px;" height="20px">
+            <p style="margin-top:1px;">You</p>
+        </div>
+    </center></div>
+    <div class="video">
+        <div id="videos" style="margin-top:7px">1</div>
+        <div id="videos" style="margin-top:7px">2</div>
+        <div id="videos" style="margin-top:7px">3</div>
+        <div id="videos" style="margin-top:7px">4</div>
+        <div id="videos">5</div>
+        <div id="videos">6</div>
+        <div id="videos">7</div>
+        <div id="videos">8</div>
+        <div id="videos">9</div>
+        <div id="videos">10</div>
+        <div id="videos">11</div>
+        <div id="videos">12</div>
+    </div>
+    </div>   
+    <script src="YouTube.js"></script>
+</body>
+</html>
