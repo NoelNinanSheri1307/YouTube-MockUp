@@ -1,4 +1,4 @@
-*
+        *
         {
             font-family: 'Times New Roman', Times, serif;
         }
@@ -10,7 +10,7 @@
         {
             margin: 0;
             padding: 0;
-            height: 3000px;
+            height:1727px;
         }
         a
         {
@@ -247,4 +247,37 @@
         #vlogdivsub2 p
         {
             text-align:left;
+        }
+        #u2bead
+        {
+            height:220px;
+            width: 100%;
+            border-radius: 25px;
+            margin-bottom:5px; 
+            margin-top:5px; 
+            padding: 0;
+            background-color: black;
+            display:flex;
+        }
+        #u2bead:hover
+        {
+            border:2px solid white;
+        }
+        #u2div1
+        {
+            height:100%;
+            width:40%;
+            text-align: center;
+        }
+        #u2div2
+        {
+            height:100%;
+            width:59%;
+            padding-top:30px;
+            padding-left:30px;
+        }
+        #topic
+        { 
+            display:flex;
+            align-items: center;
         }
